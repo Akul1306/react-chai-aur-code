@@ -1,4 +1,4 @@
-import { StrictMode } from "react";
+import React from "react";
 import { createRoot } from "react-dom/client";
 import "./index.css";
 import App from "./App.jsx";
@@ -24,9 +24,12 @@ const anotherElement = (
     Visit google
   </a>
 );
+const anotherUser = "Akul"
 const ReactElement = React.createElement("a", {
   href: "google.com",
   target: "_blank"},
-  'click me to visit google '
+  'click me to visit google ',
+  anotherUser
 );
-createRoot(document.getElementById("root")).render(ReactElement);
+createRoot(document.getElementById("root")).render(ReactElement
+);
