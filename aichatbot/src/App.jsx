@@ -6,9 +6,10 @@ import axios from "axios";
 
 function App() {
   const [question, setQuestion] = useState("");
+  const [answer, setAnswer] = useState("");
 
   async function generateAnswer() {
-    console.log("loading");
+    setAnswer("loading");
     const response = await axios({
       url: "https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash-latest:generateContent?key=AIzaSyBmKOwDKmWNfTQ3ZC9Mt3evtY4RAYTi8Ao",
       method: "post",
@@ -16,9 +17,7 @@ function App() {
         contents: [{ parts: [{ text: question }] }],
       },
     });
-    console.log(
-      response["data"]["candidates"][0]["content"]["parts"][0]["text"]
-    );
+    setAnswer(response["data"]["candidates"][0]["content"]["parts"][0]["text"]);
   }
 
   return (
@@ -31,6 +30,7 @@ function App() {
         rows="10"
       ></textarea>
       <button onClick={generateAnswer}>Generate answer</button>
+      <p>{answer}</p>
     </>
   );
 }
