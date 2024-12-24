@@ -2,7 +2,7 @@ import { useState } from 'react'
 import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
-import Card from './components/card'
+import Card from './components/Card.jsx'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -12,11 +12,10 @@ function App() {
   }
 
   return (
-    <>
+  <>
      <h1 className='bg-green-400 text-black rounded-xl mb-4'>Tailwind check</h1>
-     <Card channel="chaiaurcode"/>
-     <Card/>
-     
+     <Card hobby1 = "Travel" hobby2 = "Trek" hobby3 = "Mountain"/>
+     <Card   userName = "Akul" hobby1 = "Badminton" hobby2 = "Volleyball" hobby3 = "Cricket"/>
     </>
   )
 }

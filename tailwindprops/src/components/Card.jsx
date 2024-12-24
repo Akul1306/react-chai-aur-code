@@ -1,37 +1,22 @@
 import React from 'react'
 
 function Card(props) {
-    console.log("props",props);
 
   return (
-    <div className="flex flex-col rounded-xl  p-4 "
-          style={{
-            border: '0.88px solid',
-    
-            backdropFilter: 'saturate(180%) blur(14px)',
-            background: ' #ffffff0d',
-          }}
-        >
-          <div>
-            <img
-              src="https://res.cloudinary.com/ddcg0rzlo/image/upload/v1652470298/9StaF0UBJfih_df0248.gif"
-              alt="nft-gif"
-              width="400"
-              height="400"
-              className="rounded-xl"
-            />
-          </div>
-          <div className="flex flex-col  rounded-b-xl py-4 ">
-            <div className="flex justify-between">
-              <h1 className="font-RubikBold ">Bored ape nft accidental</h1>
-              <h1 className="font-bold font-RubikBold">Price</h1>
-            </div>
-            <div className="flex  justify-between font-mono">
-              <p>#345</p>
-              <p>0.01</p>
-            </div>
-          </div>
-        </div>
+    <div className="max-w-sm rounded overflow-hidden shadow-lg">
+  <img className="w-full" src="/img.jpg" alt="Sunset in the mountains"/>
+  <div className="px-6 py-4">
+    <div className="font-bold text-xl mb-2">The Coldest Sunset</div>
+    <p className="text-gray-700 text-base">
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus quia, nulla! Maiores et perferendis eaque, exercitationem praesentium nihil.
+    </p>
+  </div>
+  <div className="px-6 pt-4 pb-2">
+    <span className="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">#{props.hobby1}</span>
+    <span className="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">#{props.hobby2}</span>
+    <span className="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">#{props.hobby3}</span>
+  </div>
+</div>
 
   )
 }
