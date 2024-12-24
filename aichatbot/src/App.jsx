@@ -28,9 +28,9 @@ function App() {
         onChange={(e) => setQuestion(e.target.value)}
         cols="30"
         rows="10"
-      ></textarea>
-      <button onClick={generateAnswer}>Generate answer</button>
-      <p>{answer}</p>
+      ></textarea><br /><br />
+      <button class="submit-button" onClick={generateAnswer}>Generate answer</button><br /><br />
+      <p class = "box">{answer}</p>
     </>
   );
 }

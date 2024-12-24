@@ -93,3 +93,17 @@ body {
     padding: 1.5em;
   }
 }
+
+p.box {
+  border: 1px solid #ccc; /* Adds a border around the box */
+  padding: 1em; /* Adds some padding inside the box */
+  background-color: #343333; /* Optional: gives the box a light background color */
+  text-align: justify; /* Justifies the text inside the box */
+  margin: 1em 0; /* Adds some space around the box */
+  border-radius: 8px; /* Optional: rounds the box corners */
+}
+
+.submit-button{
+  background-color: aqua;
+  color: blue;
+}
